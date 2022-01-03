@@ -258,7 +258,7 @@ footer {
 }
 
 /*до 14 дюймов*/
-@media (max-height: 661px) {
+@media (max-height: 700px) {
   body {
     zoom: 100%
   }
