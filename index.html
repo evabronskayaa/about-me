@@ -21,89 +21,136 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 <body>
-<header style="">
-  <div class="nav-bar-item" style="margin-right: 500px; width: 240px"><a href="#eva">Eva Bronskaya</a></div>
+<header style="display:flex;">
+  <div class="nav-bar_item" style="width: 530px; text-align: left; margin-left: 0"><a href="#main">Eva Bronskaya</a></div>
   <div class="nav-bar">
-    <div class="nav-bar-item"><a href="#about">About</a></div>
-    <div class="nav-bar-item"><a href="#skills">Skills</a></div>
-    <div class="nav-bar-item"><a href="#contact">Contact</a></div>
+    <div class="nav-bar_item"><a href="#about">About</a></div>
+    <div class="nav-bar_item"><a href="#skills">Skills</a></div>
+    <div class="nav-bar_item"><a href="#general">General</a></div>
+    <div class="nav-bar_item"><a href="#contact">Contact</a></div>
   </div>
 </header>
-<main>
-  <section id="eva">
-    <div class="content">
-      <div style="margin-top: 150px;display: flex">
-        <img src="img/img2.png" width="" height="290" style="margin-right: 300px;"/>
-        <div style="display: inline-block;height: 310px">
-          <div class="message message-decoration btn-animated">Hey, it’s Eve!</div>
-          <div class="message message-decoration btn-animated">I am a student and interested in Front-end and ML</div>
-          <div class="message message-decoration btn-animated">Read more about me below :)</div>
+
+<section id="main">
+  <div class="content">
+    <div class="content2">
+      <img src="img/img2.png" class="img2"/>
+      <div class="messages">
+        <div class="message message-decoration btn-animated">Hey, it’s Eve!</div>
+        <div class="message message-decoration btn-animated">I am a student and interested in Front-end and ML</div>
+        <div class="message message-decoration btn-animated">Read more about me below :)</div>
+      </div>
+    </div>
+  </div>
+  <div class="circular-arrow-position">
+    <a href="#about"><img class="circular-arrow" src="img/img_2.png" alt="Кнопка «input»"/></a>
+  </div>
+</section>
+
+<section id="about" class="reveal">
+  <div class="content">
+    <div class="content2">
+      <div style="height: 310px">
+        <div class="message">
+          I am a student at IIT ChelSU and am studying to be a software engineer.
+          You can learn more about my place of study here:
+        </div>
+        <div class="ellipse">
+          <a href="http:\\iit.csu.ru" style="font-weight: bold" target="_blank">iit.csu.ru</a>
+        </div>
+      </div>
+      <div class="arrow-" style="margin-top: 100px; margin-left: 30px"><img src="img/arrow.png" width="" height="170"/></div>
+      <div style="margin-left: 225px; "><img src="img/img_6.png" width="" height="280"/></div>
+    </div>
+  </div>
+  <div class="circular-arrow-position">
+    <a href="#skills"><img class="circular-arrow" src="img/img_2.png" alt="Кнопка «input»"/></a>
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <div class="content ">
+    <div class="content2">
+      <div>
+        <div class="message message-title">Machine Learning</div>
+        <div class="message">
+          <ul>
+            <li>basic ML-algorithms</li>
+            <li>Pandas, Matplotlib</li>
+            <li>Scikit-Learn, gradient boosting libraries (Xgboost, Catboost)</li>
+            <li>basics of NLP, Deep Learning</li>
+          </ul>
+        </div>
+      </div>
+      <img src="img/img_5.png" width="" height="290" style="margin-left: 70px;margin-right: 70px"/>
+      <div>
+        <div class="message message-title">Front-end</div>
+        <div class="message">
+          <ul>
+            <li>HTML, CSS, JS</li>
+            <li>website creation based on design layouts</li>
+            <li>adaptive layout</li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="circular-arrow-position">
-      <a href="#about"><img class="circular-arrow" src="img/img_2.png" alt="Кнопка «input»"/></a>
-    </div>
-  </section>
+  </div>
+  <div class="circular-arrow-position">
+    <a href="#general"><img class="circular-arrow" src="img/img_2.png" alt="button down"/></a>
+  </div>
+</section>
 
-  <section id="about" class="reveal">
-    <div class="content">
-      <div style="margin-top: 150px; display: flex">
-        <div>
-          <div class="message">
-            I am a student at IIT ChelSU and am studying to be a software engineer.
-            You can learn more about my place of study here:
-          </div>
-          <div
-            style="margin-top: 50px; margin-bottom: 30px; background: url(img/img_3.png);height: 140px; width: 276px; display:flex;justify-content: center; align-items: center;">
-            <a href="http:\\iit.csu.ru" style="">iit.csu.ru</a>
-          </div>
-        </div>
-        <div style="margin-top: 100px; margin-left: 30px"><img src="img/arrow.png" width="" height="170"/></div>
-        <div style="margin-left: 200px; "><img src="img/img_6.png" width="" height="280"/></div>
-      </div>
-    </div>
-    <div class="circular-arrow-position">
-      <a href="#skills"><img class="circular-arrow" src="img/img_2.png" alt="Кнопка «input»"/></a>
-    </div>
-  </section>
-
-  <section id="skills" class="reveal">
-    <div class="content ">
-      <div style="margin-top: 150px;display: flex">
-        <div>
-          <div class="message message-title">Machine Learning</div>
-          <div class="message" style="line-height: 1.3;height: 250px">
-            <ul>
-              <li>basic ML-algorithms</li>
-              <li>Pandas, Matplotlib</li>
-              <li>fundamentals of NLP, Deep Learning</li>
-            </ul>
-          </div>
-        </div>
-        <img src="img/img_5.png" width="" height="290" style="margin-left: 70px;margin-right: 70px "/>
-        <div>
-          <div class="message message-title">Front-end</div>
-          <div class="message" style="line-height: 1.3;height: 250px">
-            <ul>
-              <li>HTML, CSS, JS</li>
-              <li>website creation based on design layouts</li>
-              <li>adaptive layout</li>
-            </ul>
-          </div>
+<section id="general" class="reveal">
+  <div class="content">
+    <div class="content2" style="height: 305px;">
+      <div style="">
+        <div class="message message-title">General Skills</div>
+        <div class="message" style="width: 550px;">
+          <ul>
+            <li>Git, Jenkins</li>
+            <li>SQL (PostreSQL, MySQL)</li>
+            <li>Linux</li>
+            <li>skill of using various cloud services (GCP, AWS, Yandex Cloud and etc)</li>
+            <li>knowledge of basic development methodologies (Waterfall, Agile, Kanban, RAD)</li>
+            <li>higher mathematics</li>
+          </ul>
         </div>
       </div>
+      <div style="margin-left: 180px;text-align: center; width: 300px "><img src="img/img_8.png" width="" height="280"/>
+      </div>
     </div>
-    <div class="circular-arrow-position">
-      <a href="#contact"><img class="circular-arrow" src="img/img_2.png" alt="Кнопка «input»"/></a>
-    </div>
-  </section>
-
-
-</main>
+  </div>
+  <div class="circular-arrow-position">
+    <a href="#contact"><img class="circular-arrow" src="img/img_2.png" alt="Кнопка «input»"/></a>
+  </div>
+</section>
 
 <footer id="contact">
-
+  <div class="content">
+    <div style="margin: 180px;">
+      <div id="aaa"
+           style="background:url(img/img_9.png);width: 229px; height: 229px; display:flex;justify-content: center; align-items: center;margin-left: auto;margin-right: auto;">
+        <img src="img/img_7.png"></div>
+      <div style="font-size: 20px; text-align: center">evabronskayaa@gmail.com</div>
+      <div class="content" style="justify-content: center; align-items: center; height: 70px; ">
+        <div class="social">
+          <a class="social-icon" href="#" target="_blank">
+            <img class="" src="img/tg.png" style="height: 20px; " alt="Кнопка «input»"/>
+          </a>
+        </div>
+        <div class="social">
+          <a class="social-icon" href="#"target="_blank">
+            <img class="" src="img/insta.png" style="height: 22px;  margin-top: auto;" alt="Кнопка «input»"/>
+          </a>
+        </div>
+        <div class="social">
+          <a class="social-icon" href="#" target="_blank">
+            <img class="" src="img/vk.png" style="height: 20px; " alt="Кнопка «input»"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <script>
