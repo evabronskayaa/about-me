@@ -20,15 +20,87 @@
 
   <meta name="theme-color" content="#fafafa">
 </head>
+<style>
+  .menuItem, .hamburger,.closeIcon, .menu, .showMenu {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .menuItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .menuItem:hover {
+    text-decoration: underline;
+  }
+
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    right: 20px;
+    padding: 4px;
+    border: rgba(0, 0, 0, 0.4) solid 1px;
+    background: white;
+    cursor: pointer;
+  }
+
+  .closeIcon {
+    display: none;
+  }
+
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+  }
+</style>
 <body>
-<header style="display:flex;">
-  <div class="nav-bar_item" style="width: 530px; text-align: left; margin-left: 0"><a href="#main">Eva Bronskaya</a></div>
+<header class="aaa">
+
+  <!--
+  <div class="nav-bar_item nav-bar_item--eva"><a href="#main">Eva Bronskaya</a></div>
   <div class="nav-bar">
     <div class="nav-bar_item"><a href="#about">About</a></div>
     <div class="nav-bar_item"><a href="#skills">Skills</a></div>
     <div class="nav-bar_item"><a href="#general">General</a></div>
     <div class="nav-bar_item"><a href="#contact">Contact</a></div>
-  </div>
+  </div>-->
+  <div class="nav-bar_item nav-bar_item--eva"><a href="#main">Eva Bronskaya</a></div>
+  <ul class="menu">
+    <li><a class="menuItem" href="#about">About</a></li>
+    <li><a class="menuItem" href="#skills">Skills</a></li>
+    <li><a class="menuItem" href="#general">General</a></li>
+    <li><a class="menuItem" href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger">
+    <!-- material icons https://material.io/resources/icons/ -->
+    <i class="menuIcon material-icons">density_medium</i>
+    <i class="closeIcon material-icons">close</i>
+  </button>
+
+
 </header>
 
 <section id="main">
@@ -50,8 +122,8 @@
 <section id="about" class="reveal">
   <div class="content">
     <div class="content2">
-      <div style="height: 310px">
-        <div class="message text-about">
+      <div class="content-text-about" style="height: 310px">
+        <div class="message text-about ">
           I am a student at IIT ChelSU and am studying to be a software engineer.
           You can learn more about my place of study here:
         </div>
@@ -59,8 +131,10 @@
           <a href="http:\\iit.csu.ru" style="font-weight: bold" target="_blank">iit.csu.ru</a>
         </div>
       </div>
-      <div class="image-position-" style="margin-top: 100px; margin-left: 40px"><img src="img/arrow.png" width="" height="170" class="img3"/></div>
-      <div class="image-position" style="margin-left: 220px;"><img src="img/img_6.png" width="" height="280" class="img4"/></div>
+      <div class="image-position-" style="margin-top: 100px; margin-left: 40px"><img src="img/arrow.png" width=""
+                                                                                     height="170" class="img3"/></div>
+      <div class="image-position" style="margin-left: 220px;"><img src="img/img_6.png" width="" height="280"
+                                                                   class="img4"/></div>
     </div>
   </div>
   <div class="circular-arrow-position">
@@ -93,7 +167,7 @@
           </ul>
         </div>
       </div>
-   </div>
+    </div>
   </div>
   <div class="circular-arrow-position">
     <a href="#general"><img class="circular-arrow" src="img/img_2.png" alt="button down"/></a>
@@ -116,7 +190,8 @@
           </ul>
         </div>
       </div>
-      <div style="margin-left: 180px;text-align: center; width: 300px " ><img src="img/img_8.png" width="" height="280" class="img3"/>
+      <div style="margin-left: 180px;text-align: center; width: 300px "><img src="img/img_8.png" width="" height="280"
+                                                                             class="img3"/>
       </div>
     </div>
   </div>
@@ -127,27 +202,28 @@
 
 <footer id="contact">
   <div class="content">
-    <div style="margin: 180px;">
-      <div id="aaa"
-           style="background:url(img/img_9.png);width: 229px; height: 229px; display:flex;justify-content: center; align-items: center;margin-left: auto;margin-right: auto;">
+    <div style="margin: 150px;">
+      <div
+        style="background:url(img/img_9.png);width: 229px; height: 229px; display:flex;justify-content: center; align-items: center;margin-left: auto;margin-right: auto;">
         <img src="img/img_7.png"></div>
       <div style="font-size: 20px; text-align: center">evabronskayaa@gmail.com</div>
-      <div class="content" style="justify-content: center; align-items: center; height: 70px; ">
+      <div class="content" style="justify-content: center; align-items: center; height: 70px;">
         <div class="social">
           <a class="social-icon" href="#" target="_blank">
-            <img class="" src="img/tg.png" style="height: 30px; " alt="Кнопка «input»"/>
-          </a>
-        </div>
-        <div class="social">
-          <a class="social-icon" href="#"target="_blank">
-            <img class="" src="img/insta.png" style="height: 32px;  margin-top: auto;" alt="Кнопка «input»"/>
+            <img class="" src="img/tg.png" style="height: 28px; " alt="Кнопка «input»"/>
           </a>
         </div>
         <div class="social">
           <a class="social-icon" href="#" target="_blank">
-            <img class="" src="img/vk.png" style="height: 30px; " alt="Кнопка «input»"/>
+            <img class="" src="img/vk.png" style="height: 30px; margin-top: 5px" alt="Кнопка «input»"/>
           </a>
         </div>
+        <div class="social">
+          <a class="social-icon" href="#" target="_blank">
+            <img class="" src="img/insta.png" style="height: 32px; margin-top: 3px" alt="Кнопка «input»"/>
+          </a>
+        </div>
+
       </div>
     </div>
   </div>
@@ -169,6 +245,33 @@
   }
 
   window.addEventListener("scroll", reveal);
+</script>
+<script>
+  const menu = document.querySelector(".menu");
+  const menuItems = document.querySelectorAll(".menuItem");
+  const hamburger = document.querySelector(".hamburger");
+  const closeIcon = document.querySelector(".closeIcon");
+  const menuIcon = document.querySelector(".menuIcon");
+
+  function toggleMenu() {
+    if (menu.classList.contains("showMenu")) {
+      menu.classList.remove("showMenu");
+      closeIcon.style.display = "none";
+      menuIcon.style.display = "block";
+    } else {
+      menu.classList.add("showMenu");
+      closeIcon.style.display = "block";
+      menuIcon.style.display = "none";
+    }
+  }
+
+  hamburger.addEventListener("click", toggleMenu);
+
+  menuItems.forEach(
+    function (menuItem) {
+      menuItem.addEventListener("click", toggleMenu);
+    }
+  )
 </script>
 </body>
 </html>
