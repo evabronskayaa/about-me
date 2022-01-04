@@ -138,7 +138,7 @@ section, footer {
 
 }
 
-.content-text-about{
+.content-text-about {
   display: block;
 }
 
@@ -193,6 +193,7 @@ section, footer {
 
 footer {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #6D65A0;
+  width: 100%;
 
 }
 
@@ -245,6 +246,10 @@ footer {
   margin-left: 0
 }
 
+.menu, .hamburger {
+  display: none;
+}
+
 
 /*до 34 дюймов*/
 @media (max-height: 1607px) {
@@ -280,7 +285,7 @@ footer {
     zoom: 100%
   }
 
-  .content-text-about{
+  .content-text-about {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -318,7 +323,7 @@ footer {
   }
 
   .circular-arrow-position {
-    margin-top: 120px;
+    margin-top: 150px;
 
   }
 
@@ -345,13 +350,15 @@ footer {
     margin-right: 0;
   }
 
-
-
   .nav-bar_item--eva {
     width: 145px;
     position: absolute;
     left: 10px;
   }
+  .nav-bar_item {
+    display: none;
+  }
+
 
   .header {
     flex-direction: row;
@@ -359,7 +366,10 @@ footer {
     justify-content: space-between;
   }
 
+
+
 }
+
 
 
 

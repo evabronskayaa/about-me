@@ -21,86 +21,17 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 <style>
-  .menuItem, .hamburger,.closeIcon, .menu, .showMenu {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 
-  .menuItem {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 20px;
-    color: white;
-    text-decoration: none;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .menuItem:hover {
-    text-decoration: underline;
-  }
-
-  .hamburger {
-    position: fixed;
-    z-index: 100;
-    right: 20px;
-    padding: 4px;
-    border: rgba(0, 0, 0, 0.4) solid 1px;
-    background: white;
-    cursor: pointer;
-  }
-
-  .closeIcon {
-    display: none;
-  }
-
-  .menu {
-    position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
-    list-style: none;
-    padding-top: 4rem;
-  }
-
-  .showMenu {
-    transform: translateY(0);
-  }
 </style>
 <body>
-<header class="aaa">
-
-  <!--
-  <div class="nav-bar_item nav-bar_item--eva"><a href="#main">Eva Bronskaya</a></div>
+<header style="display:flex;">
+  <div class="nav-bar_item, nav-bar_item--eva" style="width: 530px; text-align: left; margin-left: 0"><a href="#main">Eva Bronskaya</a></div>
   <div class="nav-bar">
     <div class="nav-bar_item"><a href="#about">About</a></div>
     <div class="nav-bar_item"><a href="#skills">Skills</a></div>
     <div class="nav-bar_item"><a href="#general">General</a></div>
     <div class="nav-bar_item"><a href="#contact">Contact</a></div>
-  </div>-->
-  <div class="nav-bar_item nav-bar_item--eva"><a href="#main">Eva Bronskaya</a></div>
-  <ul class="menu">
-    <li><a class="menuItem" href="#about">About</a></li>
-    <li><a class="menuItem" href="#skills">Skills</a></li>
-    <li><a class="menuItem" href="#general">General</a></li>
-    <li><a class="menuItem" href="#contact">Contact</a></li>
-  </ul>
-  <button class="hamburger">
-    <!-- material icons https://material.io/resources/icons/ -->
-    <i class="menuIcon material-icons">density_medium</i>
-    <i class="closeIcon material-icons">close</i>
-  </button>
-
-
+  </div>
 </header>
 
 <section id="main">
@@ -202,7 +133,7 @@
 
 <footer id="contact">
   <div class="content">
-    <div style="margin: 150px;">
+    <div style="margin: 175px;">
       <div
         style="background:url(img/img_9.png);width: 229px; height: 229px; display:flex;justify-content: center; align-items: center;margin-left: auto;margin-right: auto;">
         <img src="img/img_7.png"></div>
