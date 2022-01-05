@@ -8,64 +8,7 @@ body {
   -webkit-animation: Animation 7s ease infinite;
   -moz-animation: Animation 7s ease infinite;
   animation: Animation 7s ease infinite;
-
-
 }
-
-header {
-  background: rgba(196, 196, 196, 0.3);
-  height: 70px;
-  width: 100%;
-  color: #ffffff;
-  transition: all 0.4s ease;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-}
-
-.nav-bar {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.nav-bar_item {
-  margin-left: 50px;
-  text-align: left;
-  vertical-align: middle;
-  justify-content: center;
-}
-
-a {
-  transition: 1s;
-  font-size: 22px;
-  vertical-align: middle;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;
-
-
-}
-
-section, footer {
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-
-  z-index: 2;
-  -webkit-transition: all .8s ease-in-out;
-  -moz-transition: all .8s ease-in-out;
-  -o-transition: all .8s ease-in-out;
-  transition: all .8s ease-in-out;
-
-}
-
 
 @-webkit-keyframes Animation {
   0% {
@@ -103,12 +46,69 @@ section, footer {
   }
 }
 
-.messages {
+header {
+  background: rgba(196, 196, 196, 0.3);
+  height: 70px;
+  width: 100%;
+  color: #ffffff;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.nav-bar_item {
+  margin-left: 50px;
+  text-align: left;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.nav-bar_item--eva {
+  width: 530px;
+  text-align: left;
+  margin-left: 0
+}
+
+a {
+  transition: 1s;
+  font-size: 22px;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+section, footer {
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  z-index: 2;
+  -webkit-transition: all .8s ease-in-out;
+  -moz-transition: all .8s ease-in-out;
+  -o-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+
+.section-text_list {
   display: inline-block;
   height: 305px;
 }
 
-.message {
+.section-text_item {
   width: 300px;
   vertical-align: middle;
   margin-bottom: 20px;
@@ -117,14 +117,16 @@ section, footer {
 
 }
 
-.message-decoration {
+.section-text_item--decoration {
+  margin-top: 20px;
   color: #000;
   background-color: #fff;
   border-radius: 15px;
   padding: 15px 20px;
+  transition: all .8s ease-in-out;
 }
 
-.message-title {
+.section-text_title {
   font-size: 22px;
   text-align: center;
   font-weight: bold;
@@ -132,51 +134,43 @@ section, footer {
   margin-left: auto;
 }
 
-.content {
+.flex-content {
   display: flex;
   justify-content: center;
 
 }
-
-.content-text-about {
-  display: block;
-}
-
-.content2 {
+.flex-content-wrap {
   margin-top: 150px;
-  display: flex;
-  justify-content: center;
   height: 305px;
   flex-wrap: wrap;
 }
 
-.circular-arrow {
+.section_text-about {
+  display: block;
+}
+
+.general-skills {
+  width: 550px;
+}
+
+
+
+.button-arrow {
   width: 62px;
   position: relative;
   animation: down 1.5s infinite;
 }
 
-.circular-arrow::before {
+.button-arrow::before {
   position: absolute;
   transform: rotate(-45deg);
 }
 
-.circular-arrow-position {
+.button-arrow--position {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 100px;
 
-}
-
-.ellipse {
-  margin-top: 50px;
-  background-size: 200% 200%;
-  background: no-repeat url(../img/img_3.png);
-  height: 140px;
-  width: 276px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @keyframes down {
@@ -191,10 +185,16 @@ section, footer {
   }
 }
 
-footer {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #6D65A0;
-  width: 100%;
-
+.section_ellipse {
+  margin-top: 50px;
+  background-size: 200% 200%;
+  background: no-repeat url(../img/ellipse1.png);
+  height: 140px;
+  width: 276px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold
 }
 
 .reveal {
@@ -203,11 +203,6 @@ footer {
 
 .reveal.active {
   opacity: 1;
-}
-
-#aaa {
-
-
 }
 
 .social {
@@ -226,28 +221,46 @@ footer {
 
 }
 
-.img2 {
+
+footer {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #6D65A0;
+  width: 100%;
+
+}
+
+.footer_email{
+  font-size: 20px;
+  text-align: center
+}
+
+#main_emoji{
   margin-right: 315px;
   height: 290px;
-
 }
 
-.general-skills {
-  width: 550px;
+#about_emoji{
+  margin-left: 220px;
 }
 
-.header__hamburger {
-  display: none;
+#skills_emoji{
+  margin-left: 65px;
+  margin-right: 65px;
+  height: 290px
 }
 
-.nav-bar_item--eva {
-  width: 530px;
-  text-align: left;
-  margin-left: 0
+#general_emoji{
+  margin-left: 180px;
+  text-align: center;
+  width: 300px
 }
 
-.menu, .hamburger {
-  display: none;
+#contact_emoji{
+  background:url(../img/ellipse2.png);
+  width: 229px;
+  height: 229px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -280,7 +293,36 @@ footer {
 }
 
 /*до 14 дюймов*/
-@media (max-width: 450px) {
+@media (max-height: 661px) {
+  body {
+    zoom: 100%
+  }
+}
+
+/*планшет*/
+@media (max-width: 1250px) {
+  body {
+    zoom: 90%
+  }
+
+  section, footer {
+    height: 800px;
+  }
+}
+
+@media (max-width: 980px) {
+  body {
+    zoom: 70%
+  }
+}
+@media (max-width: 750px) {
+  body {
+    zoom: 45%
+  }
+}
+
+
+@media (max-width: 500px) {
   body {
     zoom: 100%
   }
@@ -305,7 +347,6 @@ footer {
   img {
     margin-right: 0;
     margin-left: 0;
-
   }
 
   .img2 {
@@ -316,26 +357,13 @@ footer {
     align-items: center;
   }
 
-  .image-position {
-    text-align: center;
-    height: 60%;
-
-  }
-
-  .circular-arrow-position {
+  .button-arrow--position {
     margin-top: 150px;
 
   }
 
-  .img3 {
+  .optional {
     display: none;
-  }
-
-  .img4 {
-    display: none;
-  }
-
-  .message {
   }
 
   .general-skills {
@@ -346,7 +374,7 @@ footer {
     margin: 25px;
   }
 
-  .text-about {
+  .section_text-about {
     margin-right: 0;
   }
 
@@ -355,6 +383,7 @@ footer {
     position: absolute;
     left: 10px;
   }
+
   .nav-bar_item {
     display: none;
   }
@@ -365,7 +394,6 @@ footer {
     width: 100%;
     justify-content: space-between;
   }
-
 
 
 }

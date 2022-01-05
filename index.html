@@ -12,7 +12,7 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="icon" href="img/eva1.png">
+  <link rel="icon" href="img/wink_emoji1.png">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -24,8 +24,8 @@
 
 </style>
 <body>
-<header style="display:flex;">
-  <div class="nav-bar_item, nav-bar_item--eva" style="width: 530px; text-align: left; margin-left: 0"><a href="#main">Eva Bronskaya</a></div>
+<header>
+  <div class="nav-bar_item, nav-bar_item--eva"><a href="#main">Eva Bronskaya</a></div>
   <div class="nav-bar">
     <div class="nav-bar_item"><a href="#about">About</a></div>
     <div class="nav-bar_item"><a href="#skills">Skills</a></div>
@@ -35,50 +35,48 @@
 </header>
 
 <section id="main">
-  <div class="content">
-    <div class="content2">
-      <div class="image-position"><img src="img/img2.png" class="img2"/></div>
-      <div class="messages">
-        <div class="message message-decoration btn-animated">Hey, it’s Eve!</div>
-        <div class="message message-decoration btn-animated">I am a student and interested in Front-end and ML</div>
-        <div class="message message-decoration btn-animated">Read more about me below :)</div>
+  <div class="flex-content">
+    <div class="flex-content flex-content-wrap">
+      <div class="image-position"><img id="main_emoji" src="img/wink_emoji1.png" alt="emoji"/></div>
+      <div class="section-text_list">
+        <div class="section-text_item section-text_item--decoration">Hey, it’s Eve!</div>
+        <div class="section-text_item section-text_item--decoration">I am a student and interested in Front-end and ML</div>
+        <div class="section-text_item section-text_item--decoration">Read more about me below :)</div>
       </div>
     </div>
   </div>
-  <div class="circular-arrow-position">
-    <a href="#about"><img class="circular-arrow" src="img/img_2.png" alt="Кнопка «input»"/></a>
+  <div class="button-arrow--position">
+    <a href="#about"><img class="button-arrow" src="img/button_down.png" alt="button-down"/></a>
   </div>
 </section>
 
 <section id="about" class="reveal">
-  <div class="content">
-    <div class="content2">
-      <div class="content-text-about" style="height: 310px">
-        <div class="message text-about ">
+  <div class="flex-content">
+    <div class="flex-content flex-content-wrap">
+      <div class="section_text-about" style="height: 310px">
+        <div class="section-text_item text-about">
           I am a student at IIT ChelSU and am studying to be a software engineer.
           You can learn more about my place of study here:
         </div>
-        <div class="ellipse">
-          <a href="http:\\iit.csu.ru" style="font-weight: bold" target="_blank">iit.csu.ru</a>
+        <div class="section_ellipse">
+          <a href="http:\\iit.csu.ru" target="_blank">iit.csu.ru</a>
         </div>
       </div>
-      <div class="image-position-" style="margin-top: 100px; margin-left: 40px"><img src="img/arrow.png" width=""
-                                                                                     height="170" class="img3"/></div>
-      <div class="image-position" style="margin-left: 220px;"><img src="img/img_6.png" width="" height="280"
-                                                                   class="img4"/></div>
+      <div style="margin-top: 100px;margin-left: 40px"><img class="optional" src="img/arrow.png" height="170" alt="arrow"/></div>
+      <div id="about_emoji"><img class="optional" src="img/wink_emoji2.png" height="280" alt="emoji"/></div>
     </div>
   </div>
-  <div class="circular-arrow-position">
-    <a href="#skills"><img class="circular-arrow" src="img/img_2.png" alt="Кнопка «input»"/></a>
+  <div class="button-arrow--position">
+    <a href="#skills"><img class="button-arrow" src="img/button_down.png" alt="button-down"/></a>
   </div>
 </section>
 
 <section id="skills" class="reveal">
-  <div class="content ">
-    <div class="content2">
+  <div class="flex-content ">
+    <div class="flex-content flex-content-wrap">
       <div>
-        <div class="message message-title">Machine Learning</div>
-        <div class="message">
+        <div class="section-text_item section-text_title">Machine Learning</div>
+        <div class="section-text_item">
           <ul>
             <li>basic ML-algorithms</li>
             <li>Pandas, Matplotlib</li>
@@ -87,10 +85,10 @@
           </ul>
         </div>
       </div>
-      <img src="img/img_5.png" width="" height="290" style="margin-left: 65px;margin-right: 65px" class="img3"/>
+      <img id="skills_emoji" class="optional" src="img/hugging_face_emoji.png" alt="emoji"/>
       <div>
-        <div class="message message-title">Front-end</div>
-        <div class="message">
+        <div class="section-text_item section-text_title">Front-end</div>
+        <div class="section-text_item">
           <ul>
             <li>HTML, CSS, JS</li>
             <li>website creation based on design layouts</li>
@@ -100,61 +98,58 @@
       </div>
     </div>
   </div>
-  <div class="circular-arrow-position">
-    <a href="#general"><img class="circular-arrow" src="img/img_2.png" alt="button down"/></a>
+  <div class="button-arrow--position">
+    <a href="#general"><img class="button-arrow" src="img/button_down.png" alt="button-down"/></a>
   </div>
 </section>
 
 <section id="general" class="reveal">
-  <div class="content">
-    <div class="content2" style="height: 305px;">
-      <div style="">
-        <div class="message message-title">General Skills</div>
-        <div class="message general-skills">
+  <div class="flex-content">
+    <div class="flex-content flex-content-wrap" style="height: 305px;">
+      <div>
+        <div class="section-text_item section-text_title">General Skills</div>
+        <div class="section-text_item general-skills">
           <ul>
-            <li>Git, Jenkins</li>
+            <li>Git</li>
+            <li>Jenkins</li>
             <li>SQL (PostreSQL, MySQL)</li>
             <li>Linux</li>
             <li>skill of using various cloud services (GCP, AWS, Yandex Cloud and etc)</li>
-            <li>knowledge of basic development methodologies (Waterfall, Agile, Kanban, RAD)</li>
+            <li>knowledge of basic development models (Waterfall, Agile, Kanban, RAD)</li>
             <li>higher mathematics</li>
           </ul>
         </div>
       </div>
-      <div style="margin-left: 180px;text-align: center; width: 300px "><img src="img/img_8.png" width="" height="280"
-                                                                             class="img3"/>
+      <div id="general_emoji"><img class="optional" src="img/fist_emoji.png" height="280" alt="emoji"/>
       </div>
     </div>
   </div>
-  <div class="circular-arrow-position">
-    <a href="#contact"><img class="circular-arrow" src="img/img_2.png" alt="Кнопка «input»"/></a>
+  <div class="button-arrow--position">
+    <a href="#contact"><img class="button-arrow" src="img/button_down.png" alt="button-down"/></a>
   </div>
 </section>
 
 <footer id="contact">
-  <div class="content">
+  <div class="flex-content">
     <div style="margin: 175px;">
-      <div
-        style="background:url(img/img_9.png);width: 229px; height: 229px; display:flex;justify-content: center; align-items: center;margin-left: auto;margin-right: auto;">
-        <img src="img/img_7.png"></div>
-      <div style="font-size: 20px; text-align: center">evabronskayaa@gmail.com</div>
-      <div class="content" style="justify-content: center; align-items: center; height: 70px;">
+      <div class="flex-content " id="contact_emoji"><img src="img/working_emoji.png" alt="emoji"></div>
+      <div class="footer_email">evabronskayaa@gmail.com</div>
+      <div class="flex-content" style="align-items: center; height: 70px;">
         <div class="social">
-          <a class="social-icon" href="#" target="_blank">
-            <img class="" src="img/tg.png" style="height: 28px; " alt="Кнопка «input»"/>
+          <a class="social-icon" href="https://t.me/evabronskayaa" target="_blank">
+            <img src="img/tg.png" style="height: 28px;" alt="Telegram"/>
           </a>
         </div>
         <div class="social">
-          <a class="social-icon" href="#" target="_blank">
-            <img class="" src="img/vk.png" style="height: 30px; margin-top: 5px" alt="Кнопка «input»"/>
+          <a class="social-icon" href="https://vk.com/evabronskayaa" target="_blank">
+            <img src="img/vk.png" style="height: 30px; margin-top: 5px" alt="VK"/>
           </a>
         </div>
         <div class="social">
-          <a class="social-icon" href="#" target="_blank">
-            <img class="" src="img/insta.png" style="height: 32px; margin-top: 3px" alt="Кнопка «input»"/>
+          <a class="social-icon" href="https://www.instagram.com/evabronskayaa/" target="_blank">
+            <img src="img/insta.png" style="height: 32px; margin-top: 3px" alt="Instagram"/>
           </a>
         </div>
-
       </div>
     </div>
   </div>
@@ -177,33 +172,7 @@
 
   window.addEventListener("scroll", reveal);
 </script>
-<script>
-  const menu = document.querySelector(".menu");
-  const menuItems = document.querySelectorAll(".menuItem");
-  const hamburger = document.querySelector(".hamburger");
-  const closeIcon = document.querySelector(".closeIcon");
-  const menuIcon = document.querySelector(".menuIcon");
 
-  function toggleMenu() {
-    if (menu.classList.contains("showMenu")) {
-      menu.classList.remove("showMenu");
-      closeIcon.style.display = "none";
-      menuIcon.style.display = "block";
-    } else {
-      menu.classList.add("showMenu");
-      closeIcon.style.display = "block";
-      menuIcon.style.display = "none";
-    }
-  }
-
-  hamburger.addEventListener("click", toggleMenu);
-
-  menuItems.forEach(
-    function (menuItem) {
-      menuItem.addEventListener("click", toggleMenu);
-    }
-  )
-</script>
 </body>
 </html>
 
