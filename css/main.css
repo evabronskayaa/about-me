@@ -153,8 +153,6 @@ section, footer {
   width: 550px;
 }
 
-
-
 .button-arrow {
   width: 62px;
   position: relative;
@@ -327,7 +325,7 @@ footer {
     zoom: 100%
   }
 
-  .content-text-about {
+  .section_text-about {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -335,7 +333,7 @@ footer {
 
   }
 
-  .content2 {
+  .flex-content-wrap {
     margin-top: 90px;
     justify-content: center;
   }
@@ -349,12 +347,17 @@ footer {
     margin-left: 0;
   }
 
-  .img2 {
+  #main_emoji {
     height: 75%;
     margin-right: 0;
     text-align: center;
     horiz-align: center;
     align-items: center;
+
+  }
+  .image-position {
+    text-align: center;
+    height: 60%;
   }
 
   .button-arrow--position {
