@@ -411,9 +411,9 @@ footer {
 
 }
 
-@media (max-width: 667px) {
+@media (max-height: 667px) {
   body {
-    zoom: 90%
+    zoom: 95%
   }
 }
 
