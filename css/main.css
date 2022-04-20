@@ -2,7 +2,12 @@ body {
   color: #ffffff;
   font-family: Alef;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(261.89deg, rgba(135, 82, 160, 0.87) 0.07%, rgba(109, 101, 160, 0.91) 41.89%, rgba(82, 123, 160, 0.92) 68.99%, rgba(37, 110, 177, 0.37) 112.21%);
-	background-size: 300% 400%;
+  background-blend-mode: normal, multiply;
+  background-size: 400% 400%;
+
+  -webkit-animation: Animation 7s ease infinite;
+  -moz-animation: Animation 7s ease infinite;
+  animation: Animation 7s ease infinite;
 }
 
 @-webkit-keyframes Animation {
@@ -361,6 +366,10 @@ footer {
     height: 60%;
   }
 
+  .button-arrow {
+    margin-top: 20px;
+  }
+
   .button-arrow--position {
     margin-top: 150px;
 
@@ -402,7 +411,7 @@ footer {
 
 }
 
-@media (max-width: 350px) {
+@media (max-width: 667px) {
   body {
     zoom: 90%
   }
